@@ -1,0 +1,32 @@
+.horizontal-nav {
+  display: flex;                /* horizontal layout */
+  align-items: center;          /* vertically center links */
+  gap: 2rem;                    /* space between links */
+  padding: 1rem 2rem;           /* padding top/bottom and from left */
+  background-color: #0f172a;    /* dark background */
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;             /* stick to top */
+  top: 0;
+  z-index: 100;
+}
+
+/* Links */
+.horizontal-nav a {
+  color: #f8fafc;               /* light text */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.horizontal-nav a:hover {
+  color: #38bdf8;               /* sky blue on hover */
+}
+
+/* Active link */
+.horizontal-nav a.active {
+  color: #38bdf8;
+}

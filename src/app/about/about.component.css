@@ -1,0 +1,75 @@
+.about {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+}
+
+.about-container {
+  max-width: 900px;
+  margin-left: 240px; /* aligns with your left padding navbar */
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.about-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #e5e7eb;
+  margin-bottom: 3rem;
+}
+
+/* Section */
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #38bdf8;
+  padding-left: 0.75rem;
+  color: #f8fafc;
+}
+
+/* Timeline Item */
+.timeline-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.meta {
+  display: block;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    margin-left: 0;
+  }
+
+  .about {
+    padding: 3rem 1.5rem;
+  }
+}

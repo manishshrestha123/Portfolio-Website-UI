@@ -1,0 +1,86 @@
+/* The main section background is now pure white */
+.skills-section {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0f172a;
+    /* Dark text for the white background */
+    font-weight: bold;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Dark cards as seen in your image */
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #0f172a;
+    /* Dark navy background for the card */
+    padding: 25px 30px;
+    border-radius: 16px;
+    /* Stronger shadow to make it pop against the white background */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+}
+
+.skill-info h4 {
+    margin: 0 0 8px;
+    color: #38bdf8;
+    /* Blue heading color from your image */
+    font-size: 1.2rem;
+}
+
+.skill-info p {
+    margin: 0;
+    color: #cbd5e1;
+    /* Light gray text for readability inside dark card */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 85%;
+}
+
+.stars {
+    display: flex;
+    gap: 4px;
+    padding-top: 5px;
+}
+
+.star {
+    font-size: 1.2rem;
+    color: #334155;
+    /* Empty star color */
+}
+
+.star.filled {
+    color: #facc15;
+    /* Yellow filled star color from image */
+}
+
+/* Ensures layout doesn't break on small screens */
+@media (max-width: 600px) {
+    .skill-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skill-info p {
+        max-width: 100%;
+    }
+}
