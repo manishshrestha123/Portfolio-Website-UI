@@ -1,26 +1,35 @@
+/* About Section */
 .about {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #f8fafc;
-  padding: 5rem 2rem;
+  padding: 80px 20px;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-container {
-  max-width: 900px;
-  margin-left: 240px; /* aligns with your left padding navbar */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  /* Centered, NO left margin */
 }
 
 .about-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #38bdf8;
+  text-align: center;
 }
 
 .about-intro {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: #e5e7eb;
   margin-bottom: 3rem;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Section */
@@ -39,15 +48,22 @@
 /* Timeline Item */
 .timeline-item {
   background: rgba(255, 255, 255, 0.03);
-  padding: 1.25rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 1.25rem;
   border: 1px solid rgba(56, 189, 248, 0.15);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
 }
 
 .timeline-item h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.25rem;
+  color: #f8fafc;
 }
 
 .meta {
@@ -55,21 +71,27 @@
   font-size: 0.9rem;
   color: #94a3b8;
   margin-bottom: 0.75rem;
+  font-style: italic;
 }
 
 .description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.7;
-  color: #e5e7eb;
+  color: #cbd5e1;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .about-container {
-    margin-left: 0;
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
   }
 
-  .about {
-    padding: 3rem 1.5rem;
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+    text-align: left;
   }
 }

@@ -1,18 +1,18 @@
-/* The main section background is now pure white */
+/* The main section background inherits global styles */
 .skills-section {
-    background-color: #ffffff;
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
 }
 
 .section-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #0f172a;
-    /* Dark text for the white background */
+    color: #38bdf8;
+    /* Light text for the dark background */
     font-weight: bold;
 }
 
@@ -27,7 +27,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: #0f172a;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(56, 189, 248, 0.15);
     /* Dark navy background for the card */
     padding: 25px 30px;
     border-radius: 16px;
@@ -38,6 +39,7 @@
 
 .skill-item:hover {
     transform: translateY(-3px);
+    border-color: #38bdf8;
 }
 
 .skill-info h4 {
@@ -75,6 +77,10 @@
 
 /* Ensures layout doesn't break on small screens */
 @media (max-width: 600px) {
+    .skills-section {
+        padding: 60px 20px;
+    }
+
     .skill-item {
         flex-direction: column;
         gap: 15px;
