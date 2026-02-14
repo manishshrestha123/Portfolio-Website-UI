@@ -87,7 +87,6 @@ h1 {
 }
 
 /* Text element handles the width and border (cursor) */
-/* Text element handles the width and border (cursor) */
 .typing-text {
   display: inline-block;
   font-family: 'Courier New', Courier, monospace;
@@ -177,5 +176,14 @@ h1 {
   .hero-image {
     margin-top: 2rem;
     padding-right: 0;
+  }
+
+  /* Fix typing overflow on mobile */
+  .typing-text {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 }
